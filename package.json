@@ -1,0 +1,24 @@
+{
+  "name": "devops-for-devs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devopsfordevevelopers/devops-for-devs/issues"
+  },
+  "homepage": "https://github.com/devopsfordevevelopers/devops-for-devs/#readme",
+  "dependencies": {
+    "dotenv": "17.2.3",
+    "express": "5.2.1"
+  }
+}

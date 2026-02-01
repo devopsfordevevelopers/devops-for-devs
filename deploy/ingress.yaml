@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: node-app-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: node-app.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: node-app-service
+                port:
+                  number: 80
+
+# add entry of ip addres -> host
+# minikube ip
+# sudo vim /etc/hosts
+# example:
+# 192.168.49.2   node-app.com
