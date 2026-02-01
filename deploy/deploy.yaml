@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java-app-container
-          image: docker.io/devopsfordevelopers/devops-demo:java-app-1.0
+          image: docker.io/devopsfordevelopers/devops-for-devs:java-app-1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8085

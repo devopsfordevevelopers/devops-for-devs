@@ -14,3 +14,8 @@ spec:
                 name: java-app-service
                 port:
                   number: 80
+# add entry of ip addres -> host
+# minikube ip
+# sudo vim /etc/hosts
+# example:
+# 192.168.49.2   java-app.com
