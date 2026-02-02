@@ -31,8 +31,7 @@ pipeline {
             steps {
                 echo 'deploying docker image...'
                 sh "kubectl apply -f deploy/deploy.yaml"
-                sh "kubectl apply -f deploy/service-cip.yaml"
-                sh "kubectl apply -f deploy/ingress.yaml"
+                sh "kubectl apply -f deploy/service-np.yaml"
             }
         }
     }
