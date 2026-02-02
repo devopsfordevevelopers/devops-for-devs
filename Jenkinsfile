@@ -37,7 +37,6 @@ pipeline {
                 script {
                     echo 'deploying docker image...'
                     sh "kubectl apply -f deploy/deploy.yaml"
-                    sh "kubectl apply -f deploy/service-cip.yaml"
                     sh "kubectl apply -f deploy/ingress.yaml"
                 }
             }
